@@ -46,7 +46,7 @@ console.log(a === b); // true
 
 값 타입과 달리 변수 `b`에 `a`를 할당하고 나서 `a`의 값을 변화시켰는데 그 변화가 `b`에도 반영된 것을 확인할 수 있다. 이는 사실 `a`와 `b` 모두 메모리 상의 `[1]`이 저장된 같은 주소를 가리키고 있기 때문이다. 포인터의 개념을 알고 있다면 이해가 빠를 것이다.
 
-![같은 주소를 가리키고 있는 변수 a, b](C:/Users/sky/Documents/dev/TIL/img/reference_type.png)
+![같은 주소를 가리키고 있는 변수 a, b](..\img\reference_type.png)
 
 ❗**심화**
 
