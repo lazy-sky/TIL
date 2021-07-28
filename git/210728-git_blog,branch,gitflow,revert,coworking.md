@@ -89,7 +89,7 @@ git flow는 브랜칭 모델의 한 종류로써 현업에서 가장 널리 쓰�
 
 대략적인 커맨드는 다음과 같다.
 
-![Git flow] 커맨드](../img/flowcommand.png)
+![Git flow 커맨드](../img/flowcommand.png)
 
 ## Github Issue & Projects
 
