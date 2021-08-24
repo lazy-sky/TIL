@@ -137,8 +137,8 @@ test('2 + 2는 4', () => {
 
 - `Object.is`
 
-    > 이는 `[==](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)` 연산자에 따른 같음과 같지 않다.`[==](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)` 연산자는 같음을 테스트하기 전에 양 쪽(이 같은 형이 아니라면)에 다양한 강제(coercion)를 적용하지만(`"" == false`가 `true`가 되는 그런 행동을 초래), `Object.is`는 어느 값도 강제하지 않는다.
-    이는 `[===](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)` 연산자에 따른 같음과도 같지 않다. `[===](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)` 연산자(와 `[==](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)` 연산자 역시)는 숫자값 `-0`과 `+0`을 같게 `[Number.NaN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Number/NaN)`은 `[NaN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/NaN)`과 같지 않게 여긴다.
+    > 이는 `==` 연산자에 따른 같음과 같지 않다.`==` 연산자는 같음을 테스트하기 전에 양 쪽(이 같은 형이 아니라면)에 다양한 강제(coercion)를 적용하지만(`"" == false`가 `true`가 되는 그런 행동을 초래), `Object.is`는 어느 값도 강제하지 않는다.
+    이는 `===` 연산자에 따른 같음과도 같지 않다. `===` 연산자(와 `==` 연산자 역시)는 숫자값 `-0`과 `+0`을 같게 `Number.NaN`은 `NaN`과 같지 않게 여긴다.
 
 ### 정리
 
