@@ -20,8 +20,6 @@ props 이름은 prefix로 `on*`을 붙인다. (e.g., `onClick`). 이는 내장
 
 `on`은 props에 실제 이벤트가 연결되어 있음을 의미하고, `handle`은 이벤트가 발생했을 때 호출될 함수임을 의미한다.
 
-I keep the verb from the actual action. I like the mapping of the name better that way. Often the semantic action that occurs is identified some other way internal to the event handler.
-
 예시에서 보듯 같은 동사(`Click`)가 쓰인 것이 포인트다. 기능에 따라 함수를 다른 이름으로 짓고 싶을 수도 있다. 이를테면, 클릭 후 경고 대화상자가 닫아져야 한다면 `handleDismiss`로 호출하고 싶을 수도 있다. 포스팅의 저자는 같은 동사(click)를 사용하여 실제 동작(dismiss)과 다르게 네이밍하는 것을 선호한다고 한다. 동일한 이름을 사용하는 것으로 의미론적 액션에 대한 혼란을 줄여주고 식별을 쉽게하기 때문이란다. 하지만 이 부분은 크게 와닿지 않았다. 좀 더 고민해봐야 할 부분인 것 같다. (원문: **I keep the verb from the actual action. I like the mapping of the name better that way. Often the semantic action that occurs is identified some other way internal to the event handler.**)
 
 ### 더 복잡한 네이밍
