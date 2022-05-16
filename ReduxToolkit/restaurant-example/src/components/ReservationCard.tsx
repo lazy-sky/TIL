@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux'
-import { removeReservation } from '../features/reservationSlice'
+import { addCustomer } from '../features/customerSlice'
+// import { removeReservation } from '../features/reservationSlice'
 
 interface IReservationCard {
   name: string
@@ -10,7 +11,12 @@ export default function ReservationCard({ name, index }: IReservationCard) {
   const dispatch = useDispatch()
 
   const handleCardClick = () => {
-    dispatch(removeReservation(index))
+    // dispatch(removeReservation(index))
+    dispatch(addCustomer({
+      id: String(Math.random()),
+      name,
+      food: []
+    }))
   }
 
   return (
