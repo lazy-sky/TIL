@@ -3,7 +3,7 @@ import reservationReducer from '../features/reservationSlice'
 
 export const store = configureStore({
   reducer: {
-    reservation: reservationReducer,
+    reservations: reservationReducer,
   },
 })
 
