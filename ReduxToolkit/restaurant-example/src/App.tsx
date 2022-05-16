@@ -33,7 +33,11 @@ function App() {
             <h5 className="reservation-header">Reservations</h5>
             <div className="reservation-cards-container">
               {reservations.map((name, index) => (
-                <ReservationCard key={`reservatoin-${index}`} name={name} />
+                <ReservationCard 
+                  key={`reservatoin-${index}`} 
+                  name={name} 
+                  index={index}
+                />
               ))}
             </div>
           </div>
